@@ -328,6 +328,17 @@ header h1 {
     color: #dc3545;
 }
 
+.explanation {
+    margin-top: 15px;
+    padding: 12px;
+    background: #e7f3ff;
+    border-left: 4px solid #667eea;
+    border-radius: 5px;
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.6;
+}
+
 .result-actions {
     margin-top: 30px;
 }
