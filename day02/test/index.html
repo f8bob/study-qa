@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по QA - День 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Тест по баг-репортам и жизненному циклу дефекта</h1>
+            <p class="subtitle">Проверка знаний второго дня обучения</p>
+        </header>
+
+        <div id="intro-screen" class="screen active">
+            <div class="intro-content">
+                <h2>Добро пожаловать!</h2>
+                <p>Этот тест проверит ваши знания по баг-репортам и жизненному циклу дефекта, изученным во второй день.</p>
+                <ul class="test-info">
+                    <li>Всего вопросов: <strong id="total-questions">12</strong></li>
+                    <li>Время прохождения: ~10-15 минут</li>
+                    <li>Типы вопросов: выбор одного ответа, множественный выбор, практические кейсы</li>
+                </ul>
+                <button id="start-btn" class="btn btn-primary">Начать тест</button>
+            </div>
+        </div>
+
+        <div id="test-screen" class="screen">
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+            <div class="question-counter">
+                Вопрос <span id="current-question">1</span> из <span id="total-questions-counter">12</span>
+            </div>
+
+            <div id="question-container"></div>
+
+            <div class="navigation-buttons">
+                <button id="prev-btn" class="btn btn-secondary" disabled>Назад</button>
+                <button id="next-btn" class="btn btn-primary">Следующий</button>
+                <button id="finish-btn" class="btn btn-success" style="display: none;">Завершить тест</button>
+            </div>
+        </div>
+
+        <div id="results-screen" class="screen">
+            <div class="results-content">
+                <h2>Результаты теста</h2>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="score-percentage">0</span>%
+                    </div>
+                    <p class="score-text">
+                        Правильных ответов: <strong id="correct-answers">0</strong> из <strong id="total-answers">12</strong>
+                    </p>
+                </div>
+
+                <div id="results-details"></div>
+
+                <div class="result-actions">
+                    <button id="restart-btn" class="btn btn-primary">Пройти тест снова</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
